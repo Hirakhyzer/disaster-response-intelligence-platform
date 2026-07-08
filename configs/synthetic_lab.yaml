@@ -1,0 +1,21 @@
+seed: 42
+output_dir: outputs
+scenario:
+  type: combined
+  grid_size: 32
+  priority_zone_count: 14
+
+hazard:
+  flood_components: [rainfall_index, river_level_index, drainage, elevation]
+  wildfire_components: [temperature_index, wind_index, dryness_index, vegetation]
+
+planning:
+  human_approval_required: true
+  route_risk_threshold: 0.86
+  shelter_capacity_policy: use only low or moderate exposure shelters
+
+safety:
+  official_warning_system: false
+  automated_dispatch: false
+  public_evacuation_order: false
+  data_origin_label: synthetic fictional disaster-response region
