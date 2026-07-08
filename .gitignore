@@ -1,0 +1,23 @@
+# Keep real disaster, infrastructure, and geospatial data local unless explicit permission exists.
+data/raw/
+data/interim/
+data/processed/
+
+# Generated local outputs
+outputs/figures/*
+outputs/results/*
+outputs/reports/*
+outputs/maps/*
+!outputs/.gitkeep
+
+# Python, notebooks, environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+.ipynb_checkpoints/
+
+# OS/editor files
+.DS_Store
+.vscode/
+.idea/
